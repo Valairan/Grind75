@@ -1,3 +1,4 @@
+#Array
 def product_except_self(nums):
     n = len(nums)
     answer = [1] * n
@@ -11,6 +12,7 @@ def product_except_self(nums):
     # Calculate right products and multiply with left products
     right_product = 1   
     for i in range(n-1, -1, -1):
+        print (i)
         answer[i] *= right_product
         right_product *= nums[i]
 
