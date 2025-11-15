@@ -1,4 +1,4 @@
-public class Main
+public class combinationsum
 {
 public static void main(String[] args) {
         int[] n = {1,2,3};

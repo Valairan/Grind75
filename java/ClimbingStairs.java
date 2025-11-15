@@ -1,4 +1,5 @@
-public class Main
+public class climbingstairs
+
 {
 	public static void main(String[] args) {
         int  n = 6;
