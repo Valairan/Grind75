@@ -16,16 +16,30 @@
         }
         return -1;
 */
-
+#include "util.h"
 #include <iostream>
 #include <vector>
 using namespace std;
 
-void main()
+int binarySearch(vector<int> &nums, int searchterm)
 {
-    vector<int> list = {1, 2, 5, 7, 8, 9};
+    return 0;
 }
 
-int binarySearch(int searchTerm, int)
+int main()
 {
+    vector<int> list = {1, 2, 5, 7, 8, 9};
+    int trueSearch = 5;
+    int falseSearch = 25;
+
+    print(list);
+
+    int result = binarySearch(list, trueSearch);
+    cout << "Element is at " << result << "\n";
+    result = binarySearch(list, falseSearch);
+    cout << "Element could not be found " << result << "\n";
+
+    return 0;
 }
+
+
