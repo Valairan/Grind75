@@ -4,12 +4,12 @@ public static void main(String[] args) {
         int[] n = {1,2,3};
         int target = 4;
 	    
-	    System.out.println(combinationSum4(n, target));
+	    System.out.println(combinationSum(n, target));
 	    
 	    
 	}
     
-    public static int combinationSum4(int[] nums, int target) {
+    public static int combinationSum(int[] nums, int target) {
         int[] dp = new int[target + 1];
         dp[0] = 1;  // base case
 
