@@ -9,4 +9,4 @@ print (is_palindrome("tomato"))
 print (is_palindrome("yo banana boy"))
 
 print (is_anagram("tomato", "potato"))
-print (is_anagram("listen", "silent"))
+print (is_anagram("listen", "silent")) 

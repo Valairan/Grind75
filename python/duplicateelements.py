@@ -1,4 +1,8 @@
+from collections import Counter
+
 areThereDuplicates = lambda arr : len(set(arr)) == len(arr)
+
+areThereDuplicatesNightmare = lambda arr : [x for x, c in Counter(arr).items() if c > 1]
 
 def getFirstDuplicate(arr):
     seen = set()
@@ -26,6 +30,9 @@ arr2 = [1,2,3,4,5]
 
 print(areThereDuplicates(arr1))
 print(areThereDuplicates(arr2))
+print()
+print(areThereDuplicatesNightmare(arr1))
+print(areThereDuplicatesNightmare(arr2))
 print()
 print(getFirstDuplicate(arr1))
 print(getFirstDuplicate(arr2))
